@@ -1,4 +1,4 @@
-from django.conf.urls import urls
+from django.conf.urls import url
 from .views import order_create
 
 app_name = 'orders'

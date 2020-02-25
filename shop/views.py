@@ -12,16 +12,17 @@ def product_list(request, category_slug = None ):
         products = Product.objects.filter(category=category)
 
     context = {
-        'categories': categories,
         'category': category,
-        'product': products
+        'categories': categories,
+        'products': products
     }
+    
 
     return render(request, 'shop/product/list.html', context)
 
 def product_detail(request, id, slug):
     product = get_object_or_404(Product, id=id, available=True)
-    cart_product_form = cart_product_form()
+    cart_product_form = CartAddProductForm()
     
     context = {
         'product': product,
