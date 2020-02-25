@@ -1,6 +1,9 @@
 from django.contrib import admin
 from .models import Category, Product
 
+#superusername: admin
+#password: aa000000
+
 class CategoryAdmin(admin.ModelAdmin):
     list_display = ['name', 'slug']
     prepopulated_fields = {'slug': ('name',)}
