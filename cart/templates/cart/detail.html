@@ -6,14 +6,13 @@
 
 {% block content %}
     <div class="container-fluid h-100">
-        <div class="row h-100" style="margin-top: 6%">
+        <div class="row h-100" style="margin-top: 5%; margin-bottom: 0">
         <h2>Your Shopping Cart
             <span class="badge pull-right"  style="font-size: 24px; font-weight: 300">
                 {% with totail_items=cart|length %}
                     {% if cart|length > 0 %}
-                        My Shopping Order:
                         <a href="{% url "cart:cart_detail" %}" style="color: #ffffff">
-                            {{ totail_items }} item {{ totail_items|pluralize }}, USD $ {{ cart.get_total_price }}
+                        My Shopping Order:{{ totail_items }} item {{ totail_items|pluralize }}, USD $ {{ cart.get_total_price }}
                         </a>
                         {% else %}
                         Your cart is empty.

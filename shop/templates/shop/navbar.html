@@ -16,7 +16,7 @@
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="#" style="color: #ffffff; font-size: 24px"><strong>Our Story</strong></a></li>
+        <li><a href="{% url 'shop:story' %}" style="color: #ffffff; font-size: 24px"><strong>Our Story</strong></a></li>
         <li><a href="{% url 'shop:product_list' %}" style="color: #ffffff; font-size: 24px"><strong>Products</strong></a></li>
      </ul>
 
@@ -25,11 +25,11 @@
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"  style="color: #ffffff; font-size: 24px" >Account <span class="caret"></span></a>
         <ul class="dropdown-menu">
           {% if not request.user.is_authenticated %}
-          <li><a href="#">Login</a></li>
-          <li><a href="#">Sign Up</a></li>
+          <li><a href="{% url 'shop:login' %}">Login</a></li>
+          <li><a href="{% url 'shop:register' %}">Sign Up</a></li>
           {% else %}
           <li><a href="#" style="font-weight: 1200; color:#004d8c ">{{ request.user.username }}</a></li>
-          <li><a href="#">Log Out</a></li>
+          <li><a href="{% url 'shop:logout' %}">Log Out</a></li>
           {%  endif %}
 
         </ul>
