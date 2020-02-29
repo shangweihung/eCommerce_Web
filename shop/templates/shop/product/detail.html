@@ -13,7 +13,7 @@
 <div class="container-fluid h-100">
     <div class="row justify-content-center h-100" style="margin-top: 10%; margin-bottom: 10%">
 
-      <div class="col-sm-12 blog-main">
+        <div class="col-md-9 col-sm-10 blog-main">
 
         <div class="blog-post">
             <div class="row">
@@ -41,6 +41,21 @@
         </div><!-- /.blog-post -->
 
       </div><!-- /.blog-main -->
+      <div class="col-md-2 col-md-offset-1 col-sm-2 blog-sidebar">
+        <div class="sidebar-module">
+          <h3>Categories</h3>
+          <ol class="list-unstyled">
+            <li {% if not category %} class="active"{% endif %}><a href="{% url 'shop:product_list' %}"  style="font-size: 24px">All</a></li>
+          
+          {% for cat in categories %}
+            <li {% if category.slug == cat.slug %} class="active"{% endif %}>
+                <a href="{{ cat.get_absolute_url }}" style="font-size: 24px">{{ cat.name }}</a>
+            </li>
+          {% endfor %}
+          </ol>
+        </div>
+      </div><!-- /.blog-sidebar -->
+
     </div><!-- /.row -->
 
   </div><!-- /.container -->
