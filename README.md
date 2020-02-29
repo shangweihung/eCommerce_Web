@@ -1,6 +1,7 @@
 # eCommerce Website
 I am the beginner for Django. This website is my first practice.
-It's ecommerce website built with Django 3.0.3. 
+It's ecommerce website built with Django 3.0.3 with style by bootstrap.
+The case is my own company - 'PonPonChiao HelpBuy Company Website'. I'll still add some new function into it.
 
 # Demo
 ### Home Page
@@ -27,9 +28,9 @@ It's ecommerce website built with Django 3.0.3.
 2. Product Detail Page
 3. Order Page
 4. Checkout Page
-5. (Under development) Sign In/ Sign Up Page
-6. (Under development) Email Confirmation Service
-7. (Under development) Multi-image Per Products
+5. __*(Under development) Sign In/ Sign Up Page*__
+6. __*(Under development) Email Confirmation Service*__
+7. __*(Under development)  Multi-image Per Products*__
 
 
 ## File Structure
