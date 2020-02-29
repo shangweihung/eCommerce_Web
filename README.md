@@ -1,23 +1,23 @@
 # eCommerce Website
 I am the beginner for Django. This website is my first practice.
 It's ecommerce website built with Django 3.0.3 with style by bootstrap.
-The case is my own company - 'PonPonChiao HelpBuy Company Website'. I'll still add some new function into it.
+The case is my sideline - 'PonPonChiao HelpBuy Company'. I'll keep adding some new functions into it.
 
 # Demo
 ### Home Page
-![Home Page](demo/homepage.PNG | width=300)
+![Home Page](demo/homepage.PNG)
 ### Product Detail View
-![Product Detail](demo/detail.PNG | width=300)
+![Product Detail](demo/detail.PNG)
 ### Shopping Cart
-![Cart](demo/cart.PNG | width=300)
+![Cart](demo/cart.PNG)
 ### Checkout Page
-![Checkout](demo/chekout.PNG | width=300)
+![Checkout](demo/chekout.PNG)
 ### Order Confirmation Page
-![Confirmation](demo/orderconfirm.PNG | width=300)
+![Confirmation](demo/orderconfirm.PNG)
 ### LogIn Page
-![Login](demo/login.PNG | width=300)
+![Login](demo/login.PNG)
 ### Register Page
-![Register](demo/signup.PNG | width=300)
+![Register](demo/signup.PNG)
 
 # Built with
 1. Django
