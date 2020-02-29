@@ -5,15 +5,19 @@ The case is my own company - 'PonPonChiao HelpBuy Company Website'. I'll still a
 
 # Demo
 ### Home Page
-![Home Page](demo/homepage.PNG)
+![Home Page](demo/homepage.PNG | width=300)
 ### Product Detail View
-![Product Detail](demo/detail.PNG)
+![Product Detail](demo/detail.PNG | width=300)
 ### Shopping Cart
-![Cart](demo/cart.PNG)
+![Cart](demo/cart.PNG | width=300)
 ### Checkout Page
-![Checkout](demo/chekout.PNG)
+![Checkout](demo/chekout.PNG | width=300)
 ### Order Confirmation Page
-![Confirmation](demo/orderconfirm.PNG)
+![Confirmation](demo/orderconfirm.PNG | width=300)
+### LogIn Page
+![Login](demo/login.PNG | width=300)
+### Register Page
+![Register](demo/signup.PNG | width=300)
 
 # Built with
 1. Django
@@ -28,7 +32,7 @@ The case is my own company - 'PonPonChiao HelpBuy Company Website'. I'll still a
 2. Product Detail Page
 3. Order Page
 4. Checkout Page
-5. __*(Under development) Sign In/ Sign Up Page*__
+5. Log In/ Sign Up Page
 6. __*(Under development) Email Confirmation Service*__
 7. __*(Under development)  Multi-image Per Products*__
 
@@ -81,6 +85,8 @@ Root
 |   |              | base.html                            base timeplate
 |   |              | footer.html
 |   |              | navbar.html
+|   |              | login.html                           log in page
+|   |              | signup.html                          register page
 |   |              
 |   | admin.py   
 |   | forms.py               
